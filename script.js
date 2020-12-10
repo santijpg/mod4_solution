@@ -1,4 +1,4 @@
-(function (window) { 
+(function () { 
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
   for (var position in names) {
@@ -9,9 +9,9 @@
 
     //Comparing the first letter
     if (firstLetter === 'j') {
-      window.byeSpeaker.speak(names[position]);
+      byeSpeaker.speak(names[position]);
     } else {
-      window.helloSpeaker.speak(names[position]);
+      helloSpeaker.speak(names[position]);
     }
   }
-})(window);
+})();
